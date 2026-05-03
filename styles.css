@@ -84,6 +84,12 @@ p {
   margin-bottom: 24px;
 }
 
+.verification {
+  color: var(--muted);
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
+
 .footer {
   position: fixed;
   right: 0;
