@@ -2,7 +2,7 @@
 
 This folder contains a small static website you can publish to create the URLs TikTok asks for:
 
-- Terms of Service: `/terms.html`
+- Terms of Service: `/terms.html/`
 - Privacy Policy: `/privacy.html`
 - Official website: `/index.html`
 
@@ -26,7 +26,7 @@ Any static host will work, as long as the pages are public HTTPS URLs. Common ch
 
 After deployment, submit full URLs like:
 
-- `https://your-domain.example/terms.html`
+- `https://your-domain.example/terms.html/`
 - `https://your-domain.example/privacy.html`
 
 TikTok may require URL ownership verification for the website URL, Terms URL, and Privacy URL.
