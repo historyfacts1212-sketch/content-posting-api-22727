@@ -1,32 +1,29 @@
-# TikTok Policy URL Static Site
+# Shorts Pipeline Studio Static Site
 
-This folder contains a small static website you can publish to create the URLs TikTok asks for:
+This repository contains the public static website for the TikTok Developer Portal submission.
 
 - Terms of Service: `/terms.html/`
 - Privacy Policy: `/privacy.html/`
 - Official website: `/index.html`
 
-Before publishing, replace every placeholder:
+Expected GitHub Pages URLs:
 
-- `Content Posting API 22727`
-- `historyfacts1212@gmail.com`
-- The app/service description on `index.html`
-- Any privacy or terms language that does not match how your app actually works
+- `https://historyfacts1212-sketch.github.io/content-posting-api-22727/`
+- `https://historyfacts1212-sketch.github.io/content-posting-api-22727/terms.html/`
+- `https://historyfacts1212-sketch.github.io/content-posting-api-22727/privacy.html/`
 
 These files are not legal advice. Have the policy text reviewed if your app collects personal data, serves users in regulated regions, or supports commercial activity.
 
-## Deploy Options
+## GitHub Pages Setup
 
-Any static host will work, as long as the pages are public HTTPS URLs. Common choices:
+The repository has the static site files, but GitHub Pages must be enabled in repository settings:
 
-- GitHub Pages
-- Netlify
-- Cloudflare Pages
-- Vercel
+1. Open repository Settings.
+2. Open Pages.
+3. Under Build and deployment, choose one of:
+   - Source: `Deploy from a branch`, branch `master`, folder `/ (root)`, or
+   - Source: `GitHub Actions`, then use the included Pages workflow.
+4. Wait for deployment to complete.
+5. Verify the URLs above return `200 OK`.
 
-After deployment, submit full URLs like:
-
-- `https://your-domain.example/terms.html/`
-- `https://your-domain.example/privacy.html/`
-
-TikTok may require URL ownership verification for the website URL, Terms URL, and Privacy URL.
+TikTok may require URL ownership verification for the website URL, Terms URL, and Privacy URL. The existing `tiktok*.txt` verification files are preserved at the repository root and inside the policy directories.
